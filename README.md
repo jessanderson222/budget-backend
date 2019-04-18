@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# budget-backend
+Ruby on Rails API backend for budgeting app
+>>>>>>> b208d0a4fdb72be4fe161da38832d94fe236c944
