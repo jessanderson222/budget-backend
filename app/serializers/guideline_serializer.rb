@@ -1,3 +1,5 @@
 class GuidelineSerializer < ActiveModel::Serializer
-  attributes :id
+ 
+  has_many :recommendations
+  attributes :id, :saving, :food, :utility, :housing, :transportation, :health, :insurance, :recreation, :personal, :misc
 end
