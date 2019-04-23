@@ -1,6 +1,6 @@
-class CreateGuidelines < ActiveRecord::Migration[6.0]
+class CreateRecommendations < ActiveRecord::Migration[6.0]
   def change
-    create_table :guidelines do |t|
+    create_table :recommendations do |t|
       t.float :saving
       t.float :food
       t.float :utility
