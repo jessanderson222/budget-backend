@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2019_04_19_174168) do
   end
 
   create_table "recommendations", force: :cascade do |t|
+    t.bigint "guideline_id"
+    t.bigint "user_id"
     t.float "saving"
     t.float "food"
     t.float "utility"
@@ -43,12 +45,14 @@ ActiveRecord::Schema.define(version: 2019_04_19_174168) do
     t.float "misc"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["guideline_id"], name: "index_recommendations_on_guideline_id"
+    t.index ["user_id"], name: "index_recommendations_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.float "budget"
     t.float "saving"
-    t.float "food"
+    t.float "foods"
     t.float "utility"
     t.float "housing"
     t.float "transportation"

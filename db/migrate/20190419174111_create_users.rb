@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
 
       t.float :budget
       t.float :saving
-      t.float :food
+      t.float :foods
       t.float :utility
       t.float :housing
       t.float :transportation
