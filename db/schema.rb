@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2019_04_19_174168) do
   create_table "users", force: :cascade do |t|
     t.float "budget"
     t.float "saving"
-    t.float "foods"
+    t.float "food"
     t.float "utility"
     t.float "housing"
     t.float "transportation"
