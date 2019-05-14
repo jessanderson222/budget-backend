@@ -50,6 +50,10 @@ ActiveRecord::Schema.define(version: 2019_04_19_174168) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password_digest"
+    t.string "img_url"
     t.float "budget"
     t.float "saving"
     t.float "food"
